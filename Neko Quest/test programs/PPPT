@@ -1,0 +1,137 @@
+# !/usr/bin/python
+#
+# Nekopara Minigame
+# A minigame based off of Nekopara
+#
+# Released under the Creative Commons Liscense
+
+VERSION = "0.1"
+NYELLOW = (240, 216, 172)
+NYURPLE = (84, 47, 67)
+NYOLD = (245, 197, 47)
+WHITE = (255, 255, 255)
+
+# Load Modules
+try:
+    import sys
+    import random
+    import math
+    import os
+    import getopt
+    import pygame
+    from pygame.sprite import Sprite
+    from socket import *
+    from pygame.locals import *
+except ImportError(err):
+    print("Couldn't load module. %s" % (err))
+    sys.exit(2)
+
+# Resource Handlin Functions
+def load_png(name):
+    '''load image and return image object'''
+    fullname = os.path.join('images', name)
+    try:
+        image = pygame.image.load(fullname)
+        if image.get_alpha() is None:
+            image = image.convert()
+        else:
+            image = image.conver_alpha()
+    except pygame.error(message):
+        print("Cannot load image:", fullname)
+        raise SystemExit(message)
+    return image, image.get_rect()
+
+def redrawWindow():
+    screen.fill(NYELLOW)
+
+def fade(width, height):
+    fade = pygame.Surface((width, height))
+    for alpha in range(0, 300):
+        fade.set_alpha(alpha)
+        redrawWindow()
+        screen.blit(fade, (0, 0))
+        pygame.display.update()
+        pygame.time.delay(3)
+
+# Game Object Classes
+class Logo(Sprite):
+    def __init__(self):
+        Sprite.__init__(self)
+        self.image, self.rect = load_png('logo.png')
+        screen = pygame.display.get_surface()
+        self.area = screen.get_rect()
+        # Function (methods) here
+
+class chibiChocola(Sprite):
+    def __init__(self):
+        Sprite.__init__(self)
+        self.image, self.rect = load_png('chibi cho.png')
+        screen = pygame.display.get_surface()
+        self.area = screen.get_rect()
+        # Function (methods) here
+        # Function to calculate new position
+        # Function to check if it hits the side
+
+class chibiVanilla(Sprite):
+    def __init__(self):
+        Sprite.__init__(self)
+        self.image, self.rect = load_png('chibi van.png')
+        screen = pygame.display.get_surface()
+        self.area = screen.get.rect()
+        # Function (methods) here
+        # Function to calculate new position
+        # Function to check if it hits the side
+
+def create_surface_with_text(text, font_size, text_rgb, bg_rgb):
+    font = pygame.freetype.SysFont("Arial", font_size)
+    surface, _ = font.render(text=text, fgcolor=text_rgb, bgcolor=bg_rgb)
+    return surface.convert_alpha()
+
+class UIElement(Sprite):
+    def __init__(self, center_position, tect, font_size, bg_rgb, text_rgb):
+        super().__init__()
+        self.mouse_over = false
+        default_image = create_surface_with_text(text, font_size, text_rgb, bg_rgb)
+        highlighted_image = create_surface_with_text(text, font_size * 1.2, text_rgb, bg_rgb)
+        self.images = [default_image, highlighted_image]
+        self.rects = [
+            default_image.get_rect(center=center_position),
+            highlighted_image.get_rect(center=center_position)]
+
+    @property
+    def image(self):
+        return self.images[1] if self.mouse_over else self.images[0]
+
+    @property
+    def rect(self):
+        return self.rects[1] if self.mouse_over else self.rects[0]
+
+    def update(self, mous_pos):
+        if self.rect.collidepoint(mouse_pos):
+            self.mouse_over = True
+        else:
+            self.mouse_over = False
+
+    def draw(self, surface):
+        sruface.blit(self.image, self.rect)
+
+def main():
+    pygame.init()
+    screen = pygame.display.set_mode((1280, 720))
+    uielement = UIElement(
+        center_position=(400, 400),
+        font_size=30,
+        bg_rgb=NYURPLE
+        text_rgb=NYELLOW,
+        text='Start Game'
+    )
+
+    while 1:
+        for event in pygame.event.get():
+            pass
+        screen.fill(NYOLD)
+        uielement.update(pygame.mouse.get_pos())
+        uielement.draw(screen)
+        pygame.display.flip()
+
+main()

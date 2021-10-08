@@ -1,0 +1,62 @@
+class ControlsMenu(Menu):
+    def __init__(self, game):
+        Menu.__init__(self, game)
+
+    def display_menu(self):
+        self.run_display = True
+        while self.run_display:
+            self.game.check_events()
+            if self.game.START_KEY or self.game.BACK_KEY:
+                self.game.curr_menu = self.game.main_menu
+                self.run_display = False
+            self.game.bgCtrl = pygame.image.load(r'C:\Neko Quest\images\bgCtrl.png').convert()
+            self.game.display.blit(self.game.bgCtrl, (0, 0))
+            self.game.draw_text('Menu Controls', 35, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 100)
+            self.game.draw_text('UP KEY           Navigate Up', 20, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 70)
+            self.game.draw_text('DOWN KEY         Navigate Down', 20, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 50)
+            self.game.draw_text('ENTER KEY        Start', 20, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 30)
+            self.game.draw_text('BACKSPACE KEY    BACK', 20, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 - 10)
+            self.game.draw_text('Player Controls', 35, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 + 10)
+            self.game.draw_text('LEFT KEY         Move Left', 20, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 + 30)
+            self.game.draw_text('RIGHT KEY        Move Right', 20, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 + 50)
+            self.game.draw_text('SPACEBAR         Jump', 20, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2 + 70)
+            self.blit_screen()
+
+elif self.game.START_KEY:
+    if self.state == 'Volume':
+        self.game.curr_menu = self.game.volume
+    elif self.state == 'Controls':
+        self.game.curr_menu = self.game.controls
+
+self.volume = VolumeMenu(self)
+self.controls = ControlsMenu(self)
+
+
+class VolumeMenu(Menu):
+    def __init__(self, game):
+        Menu.__init__(self, game)
+
+    def display_menu(self):
+        self.run_display = True
+        while self.run_display:
+            self.game.check_events()
+            if self.game.START_KEY or self.game.BACK_KEY:
+                self.game.curr_menu = self.game.options
+                self.run_display = False
+            self.game.bgCtrl = pygame.image.load(r'C:\Neko Quest\images\bgVol2.png').convert()
+            self.game.display.blit(self.game.bgCtrl, (0, 0))
+            self.game.draw_text('Coming Soon...', 35, self.game.DISPLAY_W / 2, self.game.DISPLAY_H / 2)
+            self.blit_screen()
+
+score = 0
+
+score += 1
+
+self.game.draw_text()
+
+elif self.idleL:
+    win.blit(charL[self.walkCount//8], (self.x, self.y))
+    self.walkCount += 1
+elif self.jump:
+    win.blit(jumpUp[self.walkCount//8], (self.x, self.y))
+    self.walkCount += 1

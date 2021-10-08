@@ -1,0 +1,415 @@
+{
+  "frames": {
+    "Standing-0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Standing-1": {
+      "frame": {
+        "x": 80,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 80,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Standing-2": {
+      "frame": {
+        "x": 160,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 160,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Standing-3": {
+      "frame": {
+        "x": 240,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 240,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Running-0": {
+      "frame": {
+        "x": 0,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Running-1": {
+      "frame": {
+        "x": 80,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 80,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Running-2": {
+      "frame": {
+        "x": 160,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 160,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Running-3": {
+      "frame": {
+        "x": 240,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 240,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Running-4": {
+      "frame": {
+        "x": 320,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 320,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Running-5": {
+      "frame": {
+        "x": 400,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 400,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-0": {
+      "frame": {
+        "x": 0,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-1": {
+      "frame": {
+        "x": 80,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 80,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-2": {
+      "frame": {
+        "x": 160,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 160,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-3": {
+      "frame": {
+        "x": 240,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 240,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-4": {
+      "frame": {
+        "x": 320,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 320,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-5": {
+      "frame": {
+        "x": 400,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 400,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-6": {
+      "frame": {
+        "x": 480,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 480,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-7": {
+      "frame": {
+        "x": 560,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 560,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-8": {
+      "frame": {
+        "x": 640,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 640,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    },
+    "Jumping-9": {
+      "frame": {
+        "x": 720,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 720,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 800,
+        "h": 400
+      }
+    }
+  },
+  "meta": {
+    "app": "sprite-sheet-to-json",
+    "version": "1.0.0",
+    "image": "RailgunKuroko.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 800,
+      "h": 400
+    },
+    "scale": "1"
+  }
+}
